@@ -1,0 +1,3 @@
+# NUT Playbook
+
+Installs NUT
