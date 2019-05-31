@@ -10,3 +10,4 @@
       when: ansible_os_family == 'Debian'
   roles:
     - calvinbui.ansible_nut
+    - calvinbui.ansible_datadog
