@@ -27,9 +27,6 @@ nut_ups_devices:
     [OR1500ELCDRM1U]
       driver = usbhid-ups
       port   = auto
-      ignorelb
-      override.battery.charge.low = 50
-      override.battery.runtime.low = 300
 
 nut_ups_monitors:
   - "MONITOR OR1500ELCDRM1U@{{ nut_host }} 1 {{ nut_user_master_name }} {{ nut_user_master_password }} master"
