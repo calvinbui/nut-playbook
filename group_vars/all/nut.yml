@@ -28,7 +28,7 @@ nut_ups_devices:
       driver = usbhid-ups
       port   = auto
       ignorelb
-      override.battery.charge.low = 80
+      override.battery.charge.low = 50
       override.battery.runtime.low = 300
 
 nut_ups_monitors:
