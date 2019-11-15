@@ -24,14 +24,15 @@ nut_user_slave_password: !vault |
 
 nut_ups_devices:
   - |
-    [OR600ELCDRM1U]
+    [OR1500ELCDRM1U]
       driver = usbhid-ups
       port   = auto
       ignorelb
       override.battery.charge.low = 80
+      override.battery.runtime.low = 300
 
 nut_ups_monitors:
-  - "MONITOR OR600ELCDRM1U@{{ nut_host }} 1 {{ nut_user_master_name }} {{ nut_user_master_password }} master"
+  - "MONITOR OR1500ELCDRM1U@{{ nut_host }} 1 {{ nut_user_master_name }} {{ nut_user_master_password }} master"
 
 nut_ups_listen: |
   LISTEN 127.0.0.1 3493
